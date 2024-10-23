@@ -64,6 +64,7 @@ p {
     width: 110px;
     cursor: pointer;
     background: linear-gradient(90deg, #ff5f6d, #ffc371, #c850c0, #4158d0);
+    -webkit-tap-highlight-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all ease-in-out .5s;
