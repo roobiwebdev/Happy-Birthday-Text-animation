@@ -48,6 +48,13 @@ p {
     margin-top: -3rem;
 }
 
+p span img{
+    width: 45px;
+    height: 45px;
+    border-radius: 2px;
+    transform: rotate(-10deg);
+}
+
 .play-music {
     position: absolute;
     bottom: 10%;
