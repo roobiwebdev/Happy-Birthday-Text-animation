@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Overpass:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Overpass:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #020202;
+    color: white;
+    cursor: crosshair;
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+canvas {
+    display: block;
+}
+
+.txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    background: linear-gradient(90deg, #ff5f6d, #ffc371, #c850c0, #4158d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 10rem;
+    line-height: 10rem;
+    height: 25rem;
+    font-family: "Lobster", sans-serif;
+}
+
+p {
+    background: linear-gradient(90deg, #ff5f6d, #ffc371, #c850c0, #4158d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+    font-family: "Great Vibes", cursive;
+    margin-top: -3rem;
+}
+
+.play-music {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+
+.play-music button {
+    font-weight: 600;
+    color: #fff;
+    background-color: #0097b2;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ffc371;
+    border-radius: 40px;
+    width: 110px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #ff5f6d, #ffc371, #c850c0, #4158d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all ease-in-out .5s;
+    animation: bounce 3s infinite;
+}
+
+.play-music button:hover {
+    background-color: #008080;
+    box-shadow: 0 0 15px #ff5f6d;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+@media screen and (width<=75em) {
+    p {
+        font-size: 4rem;
+        margin-top: .5rem;
+    }
+}
+
+@media screen and (width<=45em) {
+    .txt {
+        position: absolute;
+        top: 48%;
+    }
+    h1 {
+        font-size: 6.5rem;
+        width: auto;
+        line-height: 7rem;
+        height: 18rem;
+    }
+    p {
+        font-size: 3rem;
+        margin-top: -3rem;
+    }
+    .play-music button {
+        width: 150px;
+        padding: 0.8rem 1rem;
+        font-size: 17px;
+    }
+}
